@@ -1,0 +1,4 @@
+.DS_Store
+.playwright-mcp/
+# Internal planning documents and the design reference stay local: this repository is public.
+docs/
