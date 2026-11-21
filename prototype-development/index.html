@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agentica – Agentic AI für Forschung und Industrie</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="description" content="Agentic AI für Forschung und Industrie: Strategie, Entwicklung, Befähigung. Agentic AI for research and industry: strategy, development, enablement.">
+<link rel="canonical" href="https://agentica.ch/de/">
+<link rel="alternate" hreflang="de" href="https://agentica.ch/de/">
+<link rel="alternate" hreflang="en" href="https://agentica.ch/en/">
+<link rel="alternate" hreflang="x-default" href="https://agentica.ch/de/">
+<script>
+// Gemerkte Wahl, sonst erste Browsersprache aus de/en, sonst Deutsch.
+(function () {
+  var LANGS = ['de', 'en'], stored = null;
+  try { stored = localStorage.getItem('agentica-lang'); } catch (e) { /* Speicher gesperrt: Browsersprache entscheidet */ }
+  var browser = (navigator.languages || [navigator.language || '']).map(function (l) { return l.slice(0, 2).toLowerCase(); });
+  var pick = LANGS.indexOf(stored) >= 0 ? stored : (browser.filter(function (l) { return LANGS.indexOf(l) >= 0; })[0] || 'de');
+  location.replace('/prototype-development/' + pick + '/');
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=/prototype-development/de/"></noscript>
+</head>
+<body>
+<h1>Agentica</h1>
+<p>Gemeinsam mit Ihnen entwickeln wir KI-Agenten für komplexe Aufgaben in Forschung und Industrie. <a href="/prototype-development/de/">Zur deutschen Seite</a></p>
+<p lang="en">Together with you, we develop AI agents for complex tasks in research and industry. <a href="/prototype-development/en/">English page</a></p>
+</body>
+</html>
