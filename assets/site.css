@@ -162,8 +162,9 @@ h1 em { font-style: italic; color: var(--accent); }
 .hero-graph .cap { text-align: center; margin-top: 4px; }
 .brand img { display: block; border-radius: 8px; }
 .band { border-top: 1px solid var(--rule); }
-.band .wrap { display: flex; flex-wrap: wrap; gap: 14px 44px; align-items: baseline; padding-top: 22px; padding-bottom: 22px; }
-.band .names { font: 400 24px/1 var(--serif); display: flex; flex-wrap: wrap; gap: 10px 40px; }
+.band .wrap { padding-top: 30px; padding-bottom: 30px; }
+.band .claim { font: 400 clamp(22px, 2.4vw, 30px)/1.25 var(--serif); max-width: 30em; margin: 0; }
+.band .claim em { color: var(--accent); }
 
 /* Abschnitte */
 section.block { border-bottom: 1px solid var(--rule); padding: 96px 0; }
